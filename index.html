@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK Fanpage</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <style>
+        .alineado-izquierda { text-align: left; }
+        .alineado-centro { text-align: center; }
+        .alineado-derecha { text-align: right; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BLACKPINK Fanpage</h1>
+        <nav>
+            <a href="miembros.html">Miembros</a>
+            <a href="fotos.html">Los Belicos</a>
+            <a href="Conciertos.html">Conciertos</a>
+        </nav>
+    </header>
+
+    <dialog id="myDialog">
+        <h2>¡BIENVENIDO BLINK!</h2>
+        <p>Disfruta tu estadía en la página :D</p>
+        <form method="dialog">
+            <button>Cerrar</button>
+        </form>
+    </dialog>
+
+    <script>
+        window.onload = function() {
+            const dialog = document.getElementById('myDialog');
+            if (dialog) {
+                dialog.showModal();
+            }
+        };
+    </script>
+
+    <section id="noticias" class="noticias">
+        <h2>Últimas Noticias</h2>
+        <p class="alineado-derecha">El 10 de enero, se anunció que BLACKPINK sería uno de los cabezas de cartel en Coachella, convirtiéndose en el primer artista de K-pop en lograrlo.</p>
+        <p class="alineado-derecha">El 28 de marzo, se informó que BLACKPINK fue invitado a actuar junto a Lady Gaga en la Casa Blanca para la visita del presidente de Corea del Sur.</p>
+
+        <p class="alineado-centro">El 19 de mayo, lanzaron el teaser de "Las Chicas", que sirve como el OST para su juego, BLACKPINK EL JUEGO, antes de su lanzamiento el 23 de agosto.</p>
+        <p class="alineado-centro">El 21 de septiembre, se informó que Rosé fue la única en renovar con YG Entertainment, mientras que las demás buscaban agencias para sus actividades individuales.</p>
+
+        <p class="alineado-izquierda">El 6 de diciembre, YG Entertainment anunció que BLACKPINK renovó su contrato exclusivo para actividades grupales.</p>
+        <p class="alineado-izquierda">Sin embargo, el 29 de diciembre, YG confirmó que ninguno de los miembros renovó sus contratos para promociones individuales.</p>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <h2>Galería</h2>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="fotos/blackpink2.jpeg" alt="BLACKPINK 2">
+            <section id="video">
+                <video class="bolero-gifv" autoplay   playsinline style="max-width: 100%; height: auto;">
+                    <source src="pb tour intro.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </section>
+        </div>
+    </section>
+
+    <section id="video">
+        <video class="bolero-gifv" autoplay loop muted playsinline style="max-width: 100%; height: auto;">
+            <source src="PB.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BLACKPINK Fanpage | Diseñado con 💖 por un fan y su equipo</p>
+    </footer>
+</body>
+</html>
