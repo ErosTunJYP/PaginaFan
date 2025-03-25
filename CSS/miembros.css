@@ -190,4 +190,38 @@ button:hover, .btn:hover {
         font-size: 0.9rem;
     }
 }
+
+/* Redes sociales de las integrantes */
+#redes-sociales {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#redes-sociales h3 {
+    color: #ff66cc;
+    text-shadow: 0 0 10px #ff66cc;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 2px solid #ff66cc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#redes-sociales a:hover {
+    background-color: #ff66cc;
+    color: #000;
+    box-shadow: 0 0 10px #ff66cc;
+    transform: scale(1.1);
+}
 /*hola*/
